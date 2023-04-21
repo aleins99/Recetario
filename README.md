@@ -1,8 +1,7 @@
 
 
 # Proyecto con Node, MongoDB y Docker
-
-Este proyecto utiliza Node.js, MongoDB y Docker para crear una aplicación web. La aplicación proporciona una interfaz de usuario para agregar, editar y eliminar datos de una base de datos MongoDB.
+Proyecto de api rest con Node.js para agregar, editar y obtener recetas.
 
 ## Requisitos
 

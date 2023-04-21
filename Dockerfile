@@ -1,9 +1,10 @@
 FROM node:18
 
+RUN npm i -g nodemon
 RUN mkdir -p /home/recetario
 
-COPY . /home/recetario
+WORKDIR /home/recetario
 
 EXPOSE 3000
 
-CMD ["node", "/home/recetario/app/index.js"]
+CMD ["node", "app/index.js"]

@@ -1,12 +1,14 @@
 version: "3.9"
 services:
-  app_ppy:
+  recetario:
     image: recetario:1
     build: .
     ports:
       - "3000:3000"
     links:
       - mongo_ppy
+    volumes:
+      - .:/home/recetario
   mongo_ppy:
     image: mongo
     ports:

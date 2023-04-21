@@ -13,4 +13,4 @@ RUN npm install
 
 COPY . .
 
-CMD ["node", "app/index.js"]
+CMD ["nodemon", "app/index.js"]

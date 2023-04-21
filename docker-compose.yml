@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  app_ppy:
+    image: recetario:1
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo_ppy
+  mongo_ppy:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=poli
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
+    
